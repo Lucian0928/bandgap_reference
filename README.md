@@ -72,18 +72,18 @@ Detailed pre-simulation and post-simulation results across TT/FF/SS corners and 
 ### Bipolar Devices
 | Device | Type | Emitter Area Ratio |
 |------|------|--------------------|
-| Q1, Q2, Q3 | Vertical PNP | 1 : 8 |
+| $$Q_1 : Q_2 : Q_3$$ | PNP BJT | 1 : 8 : 1|
 
 ### MOS Devices
 | Device | W / L (µm / µm) |
 |------|------------------|
-| M1, M2, M3 | 8 / 1 |
+| $$M_1, M_2, M_3$$ | 8 / 1 |
 
 ### Passive Components
 | Component | Value |
 |----------|-------|
-| R1 | ~20 kΩ |
-| R2 | ~170 kΩ |
+| $$R_1$$ | ~20 kΩ |
+| $$R_2$$ | ~170 kΩ |
 
 ---
 
