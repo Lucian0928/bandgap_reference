@@ -87,7 +87,7 @@ Detailed pre-simulation and post-simulation results across TT/FF/SS corners and 
 
 ---
 
-## Temperature Sweep Results
+## Supply Sensitivity
 
 ### VREF vs. Temperature under Different Supply Voltages
 
@@ -97,23 +97,25 @@ Detailed pre-simulation and post-simulation results across TT/FF/SS corners and 
     <td align="center"><b>Post-Sim</b></td>
   </tr>
   <tr>
-    <td><img src="figures/tt1.8-2(pre-sim).png" width="380"></td>
-    <td><img src="figures/tt1.8-2(post-sim).png" width="380"></td>
+    <td><img src="figures/tt1.8-2(pre-sim).png" width="420"></td>
+    <td><img src="figures/tt1.8-2(post-sim).png" width="420"></td>
   </tr>
 </table>
 
 ---
 
-## Supply Sensitivity
+## Temperature Sweep Results
 
 ### VREF vs. Temperature (TT / FF / SS @ $$V_{DD} = 1.8V$$)
 
 <table>
   <tr>
-    <td align="center"><b>VDD = 1.8 / 1.9 / 2.0 V</b></td>
+    <td align="center"><b>Pre-Sim</b></td>
+    <td align="center"><b>Post-Sim</b></td>
   </tr>
   <tr>
-    <td><img src="figures/vdd_sweep.png" width="420"></td>
+    <td><img src="figures/tt,ff,ss(pre-sim).png" width="420"></td>
+    <td><img src="figures/tt,ff,ss(post-sim).png" width="420"></td>
   </tr>
 </table>
 
