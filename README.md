@@ -53,20 +53,6 @@ In this design, an emitter-area ratio of ( n = 8 )  is chosen to balance layout 
 
 ---
 
-## Final Performance Summary at TT corner $$V_{DD}=1.8V$$
-
-| Metric | Spec | Pre-Sim | Post-Sim |
-|------|------|---------|----------|
-| VREF @ 60°C | ~1.2V | 1.214V | 1.213V |
-| Static Current (exclude OP) | < 50µA | 9.34µA | 9.32µA |
-| OP Current | — | ~55.9 µA | ~55.69 µA |
-| OP Power Dissipation | — | 100.62 µW | 100.64 µW |
-| Temperature Coefficient | < 15 ppm/°C | 8.37ppm/°C | 10.08 ppm/°C |
-
-Detailed pre-simulation and post-simulation results across TT/FF/SS corners and supply variations are documented in `analysis/bandgap_parameter_derivation.pdf`.
-
----
-
 ## Device Parameters
 
 ### Bipolar Devices
@@ -87,18 +73,32 @@ Detailed pre-simulation and post-simulation results across TT/FF/SS corners and 
 
 ---
 
+## Final Performance Summary at TT corner $$V_{DD}=1.8V$$
+
+| Metric | Spec | Pre-Sim | Post-Sim |
+|------|------|---------|----------|
+| VREF @ 60°C | ~1.2V | 1.214V | 1.213V |
+| Static Current (exclude OP) | < 50µA | 9.34µA | 9.32µA |
+| OP Current | — | ~55.9 µA | ~55.69 µA |
+| OP Power Dissipation | — | 100.62 µW | 100.64 µW |
+| Temperature Coefficient | < 15 ppm/°C | 8.37ppm/°C | 10.08 ppm/°C |
+
+Detailed pre-simulation and post-simulation results across TT/FF/SS corners and supply variations are documented in `analysis/bandgap_parameter_derivation.pdf`.
+
+---
+
 ## Temperature Sweep Results
 
-### VREF vs. Temperature (TT / FF / SS @ VDD = 1.8 V)
+### VREF vs. Temperature under Different Supply Voltages
 
 <table>
   <tr>
-    <td align="center"><b>Pre-Simulation</b></td>
-    <td align="center"><b>Post-Simulation</b></td>
+    <td align="center"><b>Pre-Sim</b></td>
+    <td align="center"><b>Post-Sim</b></td>
   </tr>
   <tr>
-    <td><img src="figures/temp_pre.png" width="380"></td>
-    <td><img src="figures/temp_post.png" width="380"></td>
+    <td><img src="figures/tt1.8-2(pre-sim).png" width="380"></td>
+    <td><img src="figures/tt1.8-2(post-sim).png" width="380"></td>
   </tr>
 </table>
 
@@ -106,7 +106,7 @@ Detailed pre-simulation and post-simulation results across TT/FF/SS corners and 
 
 ## Supply Sensitivity
 
-### VREF vs. Temperature under Different Supply Voltages
+### VREF vs. Temperature (TT / FF / SS @ $$V_{DD} = 1.8V$$)
 
 <table>
   <tr>
