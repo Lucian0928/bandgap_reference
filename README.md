@@ -25,7 +25,7 @@ The goal of this project is to design a **precision bandgap reference** operatin
 
 The reference voltage is formed by summing a CTAT voltage and a PTAT voltage:
 
-$$V_(REF) = V_(EB3) + R_2/R_1V_Tln(n)$$
+$$V<sub>REF<sub> = (V_EB3) + R_2/R_1V_Tln(n)$$
 
 where:
 
