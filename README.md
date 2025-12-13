@@ -76,12 +76,13 @@ In this design, an emitter-area ratio of ( n = 8 )  is chosen to balance layout 
 ## Final Performance Summary at TT corner $$V_{DD}=1.8V$$
 
 | Metric | Spec | Pre-Sim | Post-Sim |
-|------|------|---------|----------|
+|:------:|:----:|:-------:|:--------:|
 | VREF @ 60°C | ~1.2V | 1.214V | 1.213V |
 | Static Current (exclude OP) | < 50µA | 9.34µA | 9.32µA |
-| OP Current | — | ~55.9 µA | ~55.69 µA |
-| OP Power Dissipation | — | 100.62 µW | 100.64 µW |
-| Temperature Coefficient | < 15 ppm/°C | 8.37ppm/°C | 10.08 ppm/°C |
+| OP Current | — | ~55.9µA | ~55.69µA |
+| OP Power Dissipation | — | 100.62µW | 100.64µW |
+| Temperature Coefficient | < 15ppm/°C | 8.37ppm/°C | 10.08ppm/°C |
+| Layout Area | – | 8,128.5µm² |
 
 Detailed pre-simulation and post-simulation results across TT/FF/SS corners and supply variations are documented in `analysis/bandgap_parameter_derivation.pdf`.
 
@@ -121,28 +122,11 @@ Detailed pre-simulation and post-simulation results across TT/FF/SS corners and 
 
 ---
 
-## Transient Response
-
-### VREF under VDD Ramp (1.8 V → 2.0 V, 100 ms rise time)
-
-<table>
-  <tr>
-    <td align="center"><b>Pre-Simulation</b></td>
-    <td align="center"><b>Post-Simulation</b></td>
-  </tr>
-  <tr>
-    <td><img src="figures/ramp_pre.png" width="380"></td>
-    <td><img src="figures/ramp_post.png" width="380"></td>
-  </tr>
-</table>
-
----
-
 ## Layout Implementation
 
 | Item | Result |
-|----|----|
-| Layout Area | ~8,100 µm² |
+|:----:|:------:|
+| Layout Area | 8,128.5 µm² |
 | DRC | Pass |
 | LVS | Pass |
 | Floorplan | Symmetric, matched devices |
