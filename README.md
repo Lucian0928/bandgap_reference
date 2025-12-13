@@ -76,7 +76,7 @@ Detailed pre-simulation and post-simulation results across TT/FF/SS corners and 
 
 ### MOS Devices
 | Device | W / L (µm / µm) |
-|------|------------------|
+|:------:|:---------------:|
 | $$M_1, M_2, M_3$$ | 8 / 1 |
 
 ### Passive Components
