@@ -32,12 +32,12 @@ $$
 
 where:
 
-- \( V_{BE} \) is the CTAT base–emitter voltage  
-- \( V_T = \frac{kT}{q} \) is the thermal voltage  
-- \( n \) is the emitter-area ratio of bipolar devices  
+- $$V_{EB3}$$ is the CTAT base–emitter voltage  
+- $$V_T = \frac{kT}{q}$$ is the thermal voltage  
+- n is the emitter-area ratio of bipolar devices  
 
 To minimize temperature dependence, the resistor ratio is selected such that the PTAT and CTAT slopes cancel around the nominal operating temperature.  
-In this design, an emitter-area ratio of \( n = 8 \) is chosen to balance layout symmetry and PTAT voltage magnitude.
+In this design, an emitter-area ratio of ( n = 8 )  is chosen to balance layout symmetry and PTAT voltage magnitude.
 
 ---
 
@@ -45,25 +45,25 @@ In this design, an emitter-area ratio of \( n = 8 \) is chosen to balance layout
 
 | Parameter | Value |
 |---------|------|
-| Technology | UMC 0.18 µm CMOS |
-| Supply Voltage (VDD) | 1.8 V (sweep: 1.8–2.0 V) |
-| Reference Voltage @ 60 °C | ~1.21 V |
-| Temperature Range | −40 °C to 100 °C |
+| Technology | UMC 0.18µm CMOS |
+| Supply Voltage (VDD) | 1.8V (sweep: 1.8–2.0V) |
+| Reference Voltage @ 60°C | ~1.2V |
+| Temperature Range | −40°C to 100°C |
 | Process Corners | TT / FF / SS |
-| Simulation Type | Pre-layout & Post-layout |
 
 ---
 
-## Final Performance Summary (Pre-Layout vs. Post-Layout)
+## Final Performance Summary at TT corner $$V_{DD}=1.8V$$
 
 | Metric | Spec | Pre-Sim | Post-Sim |
 |------|------|---------|----------|
-| VREF @ 60 °C | ~1.21 V | 1.213 V | 1.210 V |
-| Static Current (exclude OP) | < 50 µA | 9–13 µA | 9–13 µA |
-| OP Current | — | ~56 µA | ~56 µA |
-| OP Power | — | ~100 µW | ~100 µW |
-| Temperature Coefficient | < 15 ppm/°C | 3–8 ppm/°C | 4–10 ppm/°C |
-| PVT Robustness | Required | Pass | Pass |
+| VREF @ 60°C | ~1.2V | 1.214V | 1.213V |
+| Static Current (exclude OP) | < 50µA | 9.34µA | 9.32µA |
+| OP Current | — | ~55.9 µA | ~55.69 µA |
+| OP Power Dissipation | — | 100.62 µW | 100.64 µW |
+| Temperature Coefficient | < 15 ppm/°C | 8.37ppm/°C | 10.08 ppm/°C |
+
+Detailed pre-simulation and post-simulation results across TT/FF/SS corners and supply variations are documented in `analysis/bandgap_parameter_derivation.pdf`.
 
 ---
 
