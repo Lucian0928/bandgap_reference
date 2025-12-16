@@ -84,7 +84,7 @@ In this design, an emitter-area ratio of ( n = 8 )  is chosen to balance layout 
 | Temperature Coefficient | < 15ppm/°C | 8.37ppm/°C | 10.08ppm/°C |
 | Layout Area | – | - | 8,128.5µm² |
 
-Detailed pre-simulation and post-simulation results across TT/FF/SS corners and supply variations are documented in `analysis/bandgap_parameter_derivation.pdf`.
+Detailed pre-simulation and post-simulation results across TT/FF/SS corners and supply variations are documented in `detail.pdf`.
 
 ---
 
